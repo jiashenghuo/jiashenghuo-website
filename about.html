@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>关于我们 | 嘉生活家政</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+.page-hero {
+  min-height: 50vh;
+  background: linear-gradient(160deg, #1A1A2E, #16213E);
+  display: flex; align-items: center; justify-content: center;
+  text-align: center; position: relative;
+}
+.page-hero-content { position: relative; z-index: 2; }
+.page-hero h1 { font-size: 48px; font-weight: 300; color: #fff; letter-spacing: 2px; }
+.page-hero p { color: var(--gold); font-size: 15px; letter-spacing: 3px; margin-top: 12px; }
+.team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.team-card { text-align: center; padding: 32px 20px; background: var(--cream); border-radius: var(--radius); transition: all 0.3s; }
+.team-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.team-avatar { width: 80px; height: 80px; background: linear-gradient(135deg, var(--gold), var(--gold-light)); border-radius: 50%; margin: 0 auto 16px; display: flex; align-items: center; justify-content: center; font-size: 28px; color: #fff; }
+.team-card h4 { font-size: 16px; margin-bottom: 4px; }
+.team-card .role { font-size: 13px; color: var(--gold); font-weight: 500; }
+.team-card .desc { font-size: 13px; color: var(--gray); margin-top: 8px; line-height: 1.6; }
+.branch-table { width: 100%; border-collapse: collapse; margin-top: 32px; }
+.branch-table th, .branch-table td { padding: 14px 20px; text-align: left; border-bottom: 1px solid #E5E0D8; }
+.branch-table th { font-size: 13px; color: var(--gold); font-weight: 600; letter-spacing: 1px; text-transform: uppercase; }
+.branch-table td { font-size: 14px; color: var(--dark); }
+@media (max-width: 768px) { .team-grid { grid-template-columns: repeat(2, 1fr); } }
+</style>
+</head>
+<body>
+
+<nav class="navbar scrolled">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo-main.png" alt="嘉生活家政" class="logo-img">
+    </a>
+    <ul class="nav-menu">
+      <li><a href="index.html" class="nav-link" style="color:var(--dark)">首页</a></li>
+      <li><a href="about.html" class="nav-link" style="color:var(--gold)">关于我们</a></li>
+      <li><a href="index.html#services" class="nav-link" style="color:var(--dark)">服务项目</a></li>
+      <li><a href="index.html#training" class="nav-link" style="color:var(--dark)">专业培训</a></li>
+      <li><a href="index.html#contact" class="nav-link" style="color:var(--dark)">联系我们</a></li>
+    </ul>
+    <div class="nav-toggle"><span style="background:var(--dark)"></span><span style="background:var(--dark)"></span><span style="background:var(--dark)"></span></div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-content">
+    <h1>关于我们</h1>
+    <p>ABOUT US</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label">企业简介</p>
+      <h2 class="section-title">十年深耕 · 品质如一</h2>
+    </div>
+    <div style="max-width:800px;margin:0 auto;font-size:16px;color:var(--gray);line-height:2;">
+      <p>惠州市嘉生活家政服务有限公司成立于<strong>2016年8月8日</strong>，注册于惠州市惠城区江北街道金域华府，是一家集<strong>家政服务 + 技能培训 + 就业指导</strong>为一体的综合型家政服务有限公司。</p>
+      <p style="margin-top:20px;">公司拥有完善的人才运营体系、专业的管理服务团队以及强大的师资力量。目前已形成成熟的培训服务体系，在惠州市各县区拥有<strong>多家直营店和加盟店</strong>，覆盖惠城、惠阳、仲恺、博罗、惠东、大亚湾、陈江、石湾、龙溪、园洲、福田等区域。</p>
+      <p style="margin-top:20px;">公司自成立以来，先后荣获<strong>"广东省家政服务示范企业"</strong>、"惠城区家政服务培训就业站A级单位"、"惠州市家政行业协会理事单位"、"妇女之家单位"、"妇女微家单位"、"家政服务培训单位"、"南粤家政基层服务站"、"消费者放心服务承诺单位"等多项荣誉资质。</p>
+      <p style="margin-top:20px;">公司热心公益事业，累计开展<strong>公益培训150余场次，培训人次达18000余人</strong>，帮助数千家庭通过家政技能改善生活，就业率达80%以上。</p>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--gray-bg);">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label">核心团队</p>
+      <h2 class="section-title">专业团队 · 匠心服务</h2>
+      <p class="section-lead">公司核心成员18人，其中金牌讲师5名、客服团队6名、运营管理团队7名</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card"><div class="team-avatar">李</div><h4>李建成</h4><p class="role">总经理 / 创始人</p><p class="desc">高级职业技能培训师、高级职业规划师。2008年起在广州深圳等地从事家政行业，2016年创立嘉生活品牌。</p></div>
+      <div class="team-card"><div class="team-avatar">陈</div><h4>陈伟贤</h4><p class="role">副总经理</p><p class="desc">丰富的一线家政管理经验，分管公司运营及市场拓展。</p></div>
+      <div class="team-card"><div class="team-avatar">林</div><h4>林嘉敏</h4><p class="role">运营总监</p><p class="desc">资深运营管理专家，负责公司日常运营及项目管理。</p></div>
+      <div class="team-card"><div class="team-avatar">黄</div><h4>黄梅</h4><p class="role">培训总监 / 高级讲师</p><p class="desc">高级母婴护理师、育婴员培训师，多年一线教学经验。</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label">服务网络</p>
+      <h2 class="section-title">惠州全域 · 就近服务</h2>
+    </div>
+    <table class="branch-table">
+      <tr><th>门店</th><th>区域</th><th>成立时间</th></tr>
+      <tr><td>嘉生活家政总部</td><td>惠城区江北金域华府2楼</td><td>2016年8月</td></tr>
+      <tr><td>三和分部</td><td>惠阳区三和</td><td>2021年9月</td></tr>
+      <tr><td>淡水门店</td><td>惠阳区淡水</td><td>2022年10月</td></tr>
+      <tr><td>良井门店</td><td>惠阳区良井</td><td>—</td></tr>
+      <tr><td>陈江门店</td><td>仲恺区陈江</td><td>—</td></tr>
+      <tr><td>博罗门店</td><td>博罗县</td><td>—</td></tr>
+      <tr><td>惠东门店</td><td>惠东县</td><td>—</td></tr>
+      <tr><td>园洲门店</td><td>博罗县园洲</td><td>—</td></tr>
+      <tr><td>龙溪门店</td><td>博罗县龙溪</td><td>—</td></tr>
+      <tr><td>福田门店</td><td>博罗县福田</td><td>—</td></tr>
+      <tr><td>石湾门店</td><td>博罗县石湾</td><td>—</td></tr>
+      <tr><td>大亚湾门店</td><td>大亚湾区</td><td>—</td></tr>
+    </table>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><h3>嘉生活家政</h3><p>专业培训 · 严格考核 · 品质保证 · 温暖服务</p><p>&copy; 2016 - 2026 版权所有</p></div>
+      <div class="footer-links"><h4>快速导航</h4><a href="index.html">首页</a><a href="about.html">关于我们</a><a href="index.html#services">服务项目</a><a href="index.html#training">专业培训</a></div>
+      <div class="footer-links"><h4>联系方式</h4><a href="tel:0752-2866838">0752-2866838</a><a href="tel:15217807110">152 1780 7110</a></div>
+      <div class="footer-qr"><h4>关注我们</h4><div class="qr-placeholder"><span>微信公众号</span></div></div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

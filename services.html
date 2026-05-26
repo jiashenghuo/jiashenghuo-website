@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>服务项目 | 嘉生活家政</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .page-hero { min-height: 50vh; background: linear-gradient(160deg, #1A1A2E, #16213E); display: flex; align-items: center; justify-content: center; text-align: center; }
+  .page-hero h1 { font-size: 48px; font-weight: 300; color: #fff; letter-spacing: 2px; }
+  .page-hero p { color: var(--gold); font-size: 15px; letter-spacing: 3px; margin-top: 12px; }
+  .service-detail { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; margin-bottom: 100px; }
+  .service-detail:nth-child(even) { direction: rtl; }
+  .service-detail:nth-child(even) .service-text { direction: ltr; }
+  .service-detail:last-child { margin-bottom: 0; }
+  .service-visual { height: 360px; border-radius: var(--radius); display: flex; align-items: center; justify-content: center; font-size: 80px; direction: ltr; }
+  .service-text h3 { font-size: 28px; font-weight: 300; margin-bottom: 16px; letter-spacing: 1px; }
+  .service-text .tagline { color: var(--gold); font-size: 14px; font-weight: 600; letter-spacing: 2px; margin-bottom: 20px; }
+  .service-text p { font-size: 15px; color: var(--gray); line-height: 1.9; margin-bottom: 12px; }
+  .service-features { list-style: none; padding: 0; margin-top: 20px; }
+  .service-features li { padding: 8px 0 8px 24px; font-size: 14px; color: var(--gray); position: relative; }
+  .service-features li::before { content: '✓'; position: absolute; left: 0; color: var(--gold); font-weight: 700; }
+  @media (max-width: 768px) { .service-detail { grid-template-columns: 1fr; gap: 32px; } }
+</style>
+</head>
+<body>
+
+<nav class="navbar scrolled">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo-main.png" alt="嘉生活家政" class="logo-img">
+    </a>
+    <ul class="nav-menu">
+      <li><a href="index.html" class="nav-link" style="color:var(--dark)">首页</a></li>
+      <li><a href="about.html" class="nav-link" style="color:var(--dark)">关于我们</a></li>
+      <li><a href="services.html" class="nav-link" style="color:var(--gold)">服务项目</a></li>
+      <li><a href="index.html#training" class="nav-link" style="color:var(--dark)">专业培训</a></li>
+      <li><a href="index.html#contact" class="nav-link" style="color:var(--dark)">联系我们</a></li>
+    </ul>
+    <div class="nav-toggle"><span style="background:var(--dark)"></span><span style="background:var(--dark)"></span><span style="background:var(--dark)"></span></div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div>
+    <h1>服务项目</h1>
+    <p>OUR SERVICES</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="service-detail">
+      <div class="service-visual" style="background:linear-gradient(135deg, #F5EDE3, #EDE0D0);">👶</div>
+      <div class="service-text">
+        <p class="tagline">HOME CARE</p>
+        <h3>居家服务</h3>
+        <p>提供月嫂、育婴师、保姆等专业居家服务人员。所有人员均经过严格背景核查、健康体检、技能考核后持证上岗。</p>
+        <ul class="service-features">
+          <li>省级专业系统身份核验及无犯罪记录查询</li>
+          <li>体检证明 + 背景调查报告</li>
+          <li>正规合同签订，按次收费不捆绑</li>
+          <li>服务前购买保险，保障双方权益</li>
+          <li>定期回访制度：7-15-30+1 回访机制</li>
+          <li>持证上岗，标准化服务流程</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="service-detail">
+      <div class="service-visual" style="background:linear-gradient(135deg, #E8E0D8, #D8CFC5);">👴</div>
+      <div class="service-text">
+        <p class="tagline">ELDERLY CARE</p>
+        <h3>养老护理</h3>
+        <p>提供居家养老护理及医院陪护服务。护理员经过专业培训，具备老年人日常照护、康复护理、心理关怀等综合技能。</p>
+        <ul class="service-features">
+          <li>专业护理员持证上岗，爱心耐心并重</li>
+          <li>老年人日常起居照护、饮食管理</li>
+          <li>康复训练辅助及用药提醒</li>
+          <li>心理关怀与陪伴</li>
+          <li>医院陪护及术后康复照护</li>
+          <li>七级回访机制确保服务质量</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="service-detail">
+      <div class="service-visual" style="background:linear-gradient(135deg, #E0EDE5, #C8D8CF);">🧹</div>
+      <div class="service-text">
+        <p class="tagline">CLEANING</p>
+        <h3>保洁服务</h3>
+        <p>提供日常家庭保洁、深度清洁、新房开荒保洁、楼盘工程保洁等全方位清洁服务。</p>
+        <ul class="service-features">
+          <li>日常家庭保洁及深度大扫除</li>
+          <li>新房/二手房装修后开荒保洁</li>
+          <li>家具护理、地板打蜡保养</li>
+          <li>窗帘/地毯/沙发专业清洗</li>
+          <li>楼盘工程保洁及物业保洁</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="service-detail">
+      <div class="service-visual" style="background:linear-gradient(135deg, #E5E0ED, #D0C8E0);">🔧</div>
+      <div class="service-text">
+        <p class="tagline">APPLIANCE CLEANING</p>
+        <h3>家电清洗与软装护理</h3>
+        <p>专业设备深度清洗各类家电，高温杀菌消毒，延长家电使用寿命。布艺沙发、地毯、皮质沙发专业护理。</p>
+        <ul class="service-features">
+          <li>空调深度清洗消毒（挂机/柜机/中央空调）</li>
+          <li>洗衣机/冰箱/热水器专业清洗</li>
+          <li>油烟机免拆装深度清洁</li>
+          <li>燃气灶/消毒柜/集成灶清洗</li>
+          <li>布艺沙发/皮质沙发/地毯/地板清洗护理</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="service-detail">
+      <div class="service-visual" style="background:linear-gradient(135deg, #EDE0E5, #E0C8D5);">📚</div>
+      <div class="service-text">
+        <p class="tagline">TRAINING</p>
+        <h3>专业技能培训</h3>
+        <p>开设月嫂、育婴师、催乳师、产后康复、小儿推拿、家庭营养师、收纳整理师、养老护理等专业培训课程。小班教学，名师一对一指导，学完统一考核发证。</p>
+        <ul class="service-features">
+          <li>月嫂 · 育婴师 · 催乳师 · 产后康复</li>
+          <li>小儿推拿 · 家庭营养师 · 收纳整理师</li>
+          <li>养老护理 · 产前培训 · 家电清洗技术</li>
+          <li>小班教学 + 实操为主，学完即考即上岗</li>
+          <li>结业后提供就业指导及工作推荐</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><h3>嘉生活家政</h3><p>专业培训 · 严格考核 · 品质保证 · 温暖服务</p><p>&copy; 2016 - 2026 版权所有</p></div>
+      <div class="footer-links"><h4>快速导航</h4><a href="index.html">首页</a><a href="about.html">关于我们</a><a href="services.html">服务项目</a><a href="index.html#training">专业培训</a></div>
+      <div class="footer-links"><h4>联系方式</h4><a href="tel:0752-2866838">0752-2866838</a><a href="tel:15217807110">152 1780 7110</a></div>
+      <div class="footer-qr"><h4>关注我们</h4><div class="qr-placeholder"><span>微信公众号</span></div></div>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
