@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Sitemap: https://jiashenghuo-website.vercel.app/sitemap.xml
+
+User-agent: Baiduspider
+Allow: /
+Sitemap: https://jiashenghuo-website.vercel.app/sitemap.xml
